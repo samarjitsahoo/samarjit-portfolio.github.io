@@ -1,22 +1,17 @@
-// Preloader.js
 import React, { useEffect } from "react";
 import "./Preloader.scss";
 
 const Preloader = () => {
   useEffect(() => {
     const preloader = document.getElementById("preloader");
-
-    // Function to remove preloader
     const handleLoad = () => {
       if (preloader) {
         preloader.style.opacity = "0";
         setTimeout(() => {
           preloader.remove();
-        }, 600); // Match this duration with the transition time in SCSS
+        }, 600);
       }
     };
-
-    // Timeout to hide preloader in case load event fails
     const timeoutId = setTimeout(() => {
       if (preloader) {
         preloader.style.opacity = "0";
@@ -24,13 +19,9 @@ const Preloader = () => {
           preloader.remove();
         }, 600);
       }
-    }, 600); // Adjust timeout as necessary
-
-    // Add both DOMContentLoaded and load events
+    }, 100);
     window.addEventListener("DOMContentLoaded", handleLoad);
     window.addEventListener("load", handleLoad);
-
-    // Clean up events and timeout
     return () => {
       clearTimeout(timeoutId);
       window.removeEventListener("DOMContentLoaded", handleLoad);
