@@ -24,7 +24,7 @@ const Preloader = () => {
           preloader.remove();
         }, 600);
       }
-    }, 5000); // Adjust timeout as necessary
+    }, 600); // Adjust timeout as necessary
 
     // Add both DOMContentLoaded and load events
     window.addEventListener("DOMContentLoaded", handleLoad);
