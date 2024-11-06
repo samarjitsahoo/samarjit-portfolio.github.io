@@ -227,12 +227,16 @@ const Portfolio = () => {
             </div>
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-api">
               <div className="portfolio-content h-100">
-                <img src="/demo.jpg" className="img-fluid" alt="API 2" />
+                <img
+                  src="https://raw.githubusercontent.com/samarjitsahoo/chatgpt-clone/main/assets/home.jpg"
+                  className="img-fluid"
+                  alt="API 2"
+                />
                 <div className="portfolio-info">
                   <h4>API 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a
-                    href="/demo.jpg"
+                    href="https://raw.githubusercontent.com/samarjitsahoo/chatgpt-clone/main/assets/home.jpg"
                     title="API 2"
                     data-gallery="portfolio-gallery-branding"
                     className="glightbox preview-link"

@@ -43,27 +43,38 @@ export const imagesGroup6 = [
 export const imagesGroup7 = [
   {
     src: "https://raw.githubusercontent.com/samarjitsahoo/youtube-clone/main/assets/home.jpg",
-    alt: "Youtube Home",
+    alt: "Samartube Home",
   },
   {
     src: "https://raw.githubusercontent.com/samarjitsahoo/youtube-clone/main/assets/search.jpg",
-    alt: "Youtube Search",
+    alt: "Samartube Search",
   },
   {
     src: "https://raw.githubusercontent.com/samarjitsahoo/youtube-clone/main/assets/video.jpg",
-    alt: "Youtube Video",
+    alt: "Samartube Video",
   },
   {
     src: "https://raw.githubusercontent.com/samarjitsahoo/youtube-clone/main/assets/comment.jpg",
-    alt: "Youtube Comment",
+    alt: "Samartube Comment",
   },
 ];
-
 export const imagesGroup8 = [
-  { src: "/demo.jpg", alt: "Image 5" },
-  { src: "/demo.jpg", alt: "Image 6" },
-  { src: "/demo.jpg", alt: "Image 7" },
-  { src: "/demo.jpg", alt: "Image 8" },
+  {
+    src: "https://raw.githubusercontent.com/samarjitsahoo/chatgpt-clone/main/assets/home.jpg",
+    alt: "SamarGPT Home",
+  },
+  {
+    src: "https://raw.githubusercontent.com/samarjitsahoo/chatgpt-clone/main/assets/hi.jpg",
+    alt: "SamarGPT Hi",
+  },
+  {
+    src: "https://raw.githubusercontent.com/samarjitsahoo/chatgpt-clone/main/assets/program.jpg",
+    alt: "SamarGPT Program",
+  },
+  {
+    src: "https://raw.githubusercontent.com/samarjitsahoo/chatgpt-clone/main/assets/para.jpg",
+    alt: "SamarGPT Paragraph",
+  },
 ];
 
 export const imagesGroup9 = [
