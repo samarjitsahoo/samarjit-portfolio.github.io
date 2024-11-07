@@ -55,7 +55,7 @@ const Portfolio = () => {
       <div className="container">
         <div
           className="isotope-layout"
-          data-default-filter="*"
+          data-default-filter=".filter-web"
           data-layout="masonry"
           data-sort="original-order"
         >
@@ -64,10 +64,9 @@ const Portfolio = () => {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <li data-filter="*" className="filter-active">
-              All
+            <li data-filter=".filter-web" className="filter-active">
+              Web
             </li>
-            <li data-filter=".filter-web">Web</li>
             <li data-filter=".filter-aiml">AI/ML</li>
             <li data-filter=".filter-api">API</li>
             <li data-filter=".filter-other">Other</li>

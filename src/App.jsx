@@ -19,7 +19,6 @@ import Testimonials from "./components/Testimonials/Testimonials";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Chatbot from "./components/Chatbot/Chatbot";
-import ErrorPage from "./components/Error/Error";
 
 function App() {
   return (
@@ -49,7 +48,6 @@ function App() {
             <Route path="/projects/aiml" element={<ProjectAIML />} />
             <Route path="/projects/api" element={<ProjectAPI />} />
             <Route path="/projects/other" element={<ProjectOther />} />
-            <Route path="*" element={<ErrorPage />} />
           </Routes>
         </main>
         <Footer />
