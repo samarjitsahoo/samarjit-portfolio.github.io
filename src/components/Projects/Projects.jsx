@@ -17,6 +17,7 @@ const Portfolio = () => {
       iso = new Isotope(".isotope-container", {
         itemSelector: ".isotope-item",
         layoutMode: "masonry",
+        filter: ".filter-web",
       });
     };
     const imgLoad = imagesLoaded(".isotope-container");
@@ -55,7 +56,7 @@ const Portfolio = () => {
       <div className="container">
         <div
           className="isotope-layout"
-          data-default-filter="*"
+          data-default-filter=".filter-web"
           data-layout="masonry"
           data-sort="original-order"
         >
@@ -64,10 +65,9 @@ const Portfolio = () => {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <li data-filter="*" className="filter-active">
-              All
+            <li data-filter=".filter-web" className="filter-active">
+              Web
             </li>
-            <li data-filter=".filter-web">Web</li>
             <li data-filter=".filter-aiml">AI/ML</li>
             <li data-filter=".filter-api">API</li>
             <li data-filter=".filter-other">Other</li>
@@ -101,6 +101,54 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
+            <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div className="portfolio-content h-100">
+                <img src="/demo.jpg" className="img-fluid" alt="Web 2" />
+                <div className="portfolio-info">
+                  <h4>Website 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="/demo.jpg"
+                    title="Web 2"
+                    data-gallery="portfolio-gallery-app"
+                    className="glightbox preview-link"
+                  >
+                    <i className="bi bi-zoom-in"></i>
+                  </a>
+                  <Link
+                    to="/projects/web"
+                    title="More Details"
+                    className="details-link"
+                  >
+                    <i className="bi bi-link-45deg"></i>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div className="portfolio-content h-100">
+                <img src="/demo.jpg" className="img-fluid" alt="Web 3" />
+                <div className="portfolio-info">
+                  <h4>Website 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="/demo.jpg"
+                    title="Web 3"
+                    data-gallery="portfolio-gallery-app"
+                    className="glightbox preview-link"
+                  >
+                    <i className="bi bi-zoom-in"></i>
+                  </a>
+                  <Link
+                    to="/projects/web"
+                    title="More Details"
+                    className="details-link"
+                  >
+                    <i className="bi bi-link-45deg"></i>
+                  </Link>
+                </div>
+              </div>
+            </div>
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-aiml">
               <div className="portfolio-content h-100">
                 <img src="/demo.jpg" className="img-fluid" alt="AI/ML 1" />
@@ -110,6 +158,54 @@ const Portfolio = () => {
                   <a
                     href="/demo.jpg"
                     title="AI/ML 1"
+                    data-gallery="portfolio-gallery-product"
+                    className="glightbox preview-link"
+                  >
+                    <i className="bi bi-zoom-in"></i>
+                  </a>
+                  <Link
+                    to="/projects/aiml"
+                    title="More Details"
+                    className="details-link"
+                  >
+                    <i className="bi bi-link-45deg"></i>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-aiml">
+              <div className="portfolio-content h-100">
+                <img src="/demo.jpg" className="img-fluid" alt="AI/ML 2" />
+                <div className="portfolio-info">
+                  <h4>AI/ML 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="/demo.jpg"
+                    title="AI/ML 2"
+                    data-gallery="portfolio-gallery-product"
+                    className="glightbox preview-link"
+                  >
+                    <i className="bi bi-zoom-in"></i>
+                  </a>
+                  <Link
+                    to="/projects/aiml"
+                    title="More Details"
+                    className="details-link"
+                  >
+                    <i className="bi bi-link-45deg"></i>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-aiml">
+              <div className="portfolio-content h-100">
+                <img src="/demo.jpg" className="img-fluid" alt="AI/ML 3" />
+                <div className="portfolio-info">
+                  <h4>AI/ML 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="/demo.jpg"
+                    title="AI/ML 3"
                     data-gallery="portfolio-gallery-product"
                     className="glightbox preview-link"
                   >
@@ -153,78 +249,6 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-other">
-              <div className="portfolio-content h-100">
-                <img src="/demo.jpg" className="img-fluid" alt="Other 1" />
-                <div className="portfolio-info">
-                  <h4>Others 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a
-                    href="/demo.jpg"
-                    title="Other 1"
-                    data-gallery="portfolio-gallery-books"
-                    className="glightbox preview-link"
-                  >
-                    <i className="bi bi-zoom-in"></i>
-                  </a>
-                  <Link
-                    to="/projects/other"
-                    title="More Details"
-                    className="details-link"
-                  >
-                    <i className="bi bi-link-45deg"></i>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-              <div className="portfolio-content h-100">
-                <img src="/demo.jpg" className="img-fluid" alt="Web 2" />
-                <div className="portfolio-info">
-                  <h4>Website 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a
-                    href="/demo.jpg"
-                    title="Web 2"
-                    data-gallery="portfolio-gallery-app"
-                    className="glightbox preview-link"
-                  >
-                    <i className="bi bi-zoom-in"></i>
-                  </a>
-                  <Link
-                    to="/projects/web"
-                    title="More Details"
-                    className="details-link"
-                  >
-                    <i className="bi bi-link-45deg"></i>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-aiml">
-              <div className="portfolio-content h-100">
-                <img src="/demo.jpg" className="img-fluid" alt="AI/ML 2" />
-                <div className="portfolio-info">
-                  <h4>AI/ML 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a
-                    href="/demo.jpg"
-                    title="AI/ML 2"
-                    data-gallery="portfolio-gallery-product"
-                    className="glightbox preview-link"
-                  >
-                    <i className="bi bi-zoom-in"></i>
-                  </a>
-                  <Link
-                    to="/projects/aiml"
-                    title="More Details"
-                    className="details-link"
-                  >
-                    <i className="bi bi-link-45deg"></i>
-                  </Link>
-                </div>
-              </div>
-            </div>
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-api">
               <div className="portfolio-content h-100">
                 <img
@@ -253,6 +277,58 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
+            <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-api">
+              <div className="portfolio-content h-100">
+                <img
+                  src="/demo.jpg"
+                  className="img-fluid"
+                  alt="API 3"
+                />
+                <div className="portfolio-info">
+                  <h4>API 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="/demo.jpg"
+                    title="API 3"
+                    data-gallery="portfolio-gallery-branding"
+                    className="glightbox preview-link"
+                  >
+                    <i className="bi bi-zoom-in"></i>
+                  </a>
+                  <Link
+                    to="/projects/api"
+                    title="More Details"
+                    className="details-link"
+                  >
+                    <i className="bi bi-link-45deg"></i>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-other">
+              <div className="portfolio-content h-100">
+                <img src="/demo.jpg" className="img-fluid" alt="Other 1" />
+                <div className="portfolio-info">
+                  <h4>Others 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="/demo.jpg"
+                    title="Other 1"
+                    data-gallery="portfolio-gallery-books"
+                    className="glightbox preview-link"
+                  >
+                    <i className="bi bi-zoom-in"></i>
+                  </a>
+                  <Link
+                    to="/projects/other"
+                    title="More Details"
+                    className="details-link"
+                  >
+                    <i className="bi bi-link-45deg"></i>
+                  </Link>
+                </div>
+              </div>
+            </div>
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-other">
               <div className="portfolio-content h-100">
                 <img src="/demo.jpg" className="img-fluid" alt="Other 2" />
@@ -269,78 +345,6 @@ const Portfolio = () => {
                   </a>
                   <Link
                     to="/projects/other"
-                    title="More Details"
-                    className="details-link"
-                  >
-                    <i className="bi bi-link-45deg"></i>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-              <div className="portfolio-content h-100">
-                <img src="/demo.jpg" className="img-fluid" alt="Web 3" />
-                <div className="portfolio-info">
-                  <h4>Website 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a
-                    href="/demo.jpg"
-                    title="Web 3"
-                    data-gallery="portfolio-gallery-app"
-                    className="glightbox preview-link"
-                  >
-                    <i className="bi bi-zoom-in"></i>
-                  </a>
-                  <Link
-                    to="/projects/web"
-                    title="More Details"
-                    className="details-link"
-                  >
-                    <i className="bi bi-link-45deg"></i>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-aiml">
-              <div className="portfolio-content h-100">
-                <img src="/demo.jpg" className="img-fluid" alt="AI/ML 3" />
-                <div className="portfolio-info">
-                  <h4>AI/ML 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a
-                    href="/demo.jpg"
-                    title="AI/ML 3"
-                    data-gallery="portfolio-gallery-product"
-                    className="glightbox preview-link"
-                  >
-                    <i className="bi bi-zoom-in"></i>
-                  </a>
-                  <Link
-                    to="/projects/aiml"
-                    title="More Details"
-                    className="details-link"
-                  >
-                    <i className="bi bi-link-45deg"></i>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-api">
-              <div className="portfolio-content h-100">
-                <img src="/demo.jpg" className="img-fluid" alt="API 3" />
-                <div className="portfolio-info">
-                  <h4>API 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a
-                    href="/demo.jpg"
-                    title="API 3"
-                    data-gallery="portfolio-gallery-branding"
-                    className="glightbox preview-link"
-                  >
-                    <i className="bi bi-zoom-in"></i>
-                  </a>
-                  <Link
-                    to="/projects/api"
                     title="More Details"
                     className="details-link"
                   >
